@@ -1,0 +1,19 @@
+body{
+    background: url("https://images.unsplash.com/photo-1499984290398-e50238823f66?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+
+}
+
+#f{
+    width: 50%;
+    position: absolute;
+    font-size: 30px;
+    top:40%;
+    left:25%;
+    color:black;
+    background-color: aqua;
+
+}

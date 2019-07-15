@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Register form</title>
+
+    <!-- Sweetalert cdn -->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    
+
+    <div class="forminput">
+        <input type="text" name="uname" placeholder="enter name" id="uname"> <br>
+        <input type="email" name="mail" placeholder="enter email" id="mail"> <br>
+        <input type="password" name="pwd" placeholder="enter password" id="pwd"> <br>
+        <input type="password" name="cpwd" placeholder="confirm password" id="cpwd"> 
+
+        <button onclick="submit()">Submit</button>
+    </div>
+
+<!-- Java Script --><!-- Use sweetalerts to make the modifications --> <!--  alert("Invalid"); replaced by swal -->
+    <script>
+    
+   function submit(){
+
+       var pass = document.getElementById("pwd").Value;
+       var cpwd = document.getElementById("cpwd").value;
+
+       if(pass != cpwd)
+       {
+          
+        swal("Good job!", "You clicked the button!", "success");
+       }
+   }
+    
+    </script>
+</body>
+</html>
